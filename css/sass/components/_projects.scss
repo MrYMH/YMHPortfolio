@@ -1,0 +1,7 @@
+@use '../color' as *;
+@use '../mixins' as *;
+
+.projects{
+    width: 100vw;
+    height: fit-content;
+}

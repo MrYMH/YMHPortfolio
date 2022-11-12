@@ -1,0 +1,36 @@
+@use '../color' as *;
+@use '../mixins' as *;
+
+.skills{
+    width: 100vw;
+    height: 60vh;
+    background-color: $black !important;
+    .container{
+        @include center;
+        flex-direction: column;
+        .box{
+            .skill{
+                font-size: 3rem;
+            }
+            .skill:hover{
+                .skicon{
+                    color: $orange !important;
+                }
+            }
+        }
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .skills{
+        .container{
+            h2{
+                // margin-top: 2.5rem;
+                position: relative;
+                bottom: -3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+
+
+
+.navbar{
+    width: 75%;
+    background-color: transparent !important;
+    .navmob{
+        display: none; //992px 
+    }
+    
+    .navbar-brand{
+        img{
+            background-color: transparent;
+            border-radius: 50%;
+            
+        }
+    }
+}
+
+// @media only screen and (max-width: 992px) {
+//     // /* For mobile phones: */
+//     // [class*="col-"] {
+//     //   width: 100%;
+//     .navbar{
+//         .collapse{
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: space-between;
+//             align-items: center;
+//             align-self: flex-end;
+//             position: relative;
+//             right: -38rem;
+//             bottom: -13rem;
+//             // top: -2.5rem;
+//         }
+        
+//         .navmob{
+//             display: block; 
+//         }
+        
+//     }
+
+// }
+// @media only screen and (max-width: 768px){
+//     .navbar{
+//         .collapse{
+            
+//             right: -26rem;
+//             bottom: -10rem;
+            
+//         }
+        
+//     }
+    
+// }
+// @media only screen and (max-width: 600px){
+//     .navbar{
+//         .collapse{
+            
+//             right: -7rem;
+            
+//         }
+        
+//     }
+    
+// }

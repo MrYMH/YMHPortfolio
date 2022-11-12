@@ -1,0 +1,36 @@
+
+
+.home{
+    width: 100%;
+    height: 90vh;
+}
+
+
+
+.main{
+    overflow: hidden;
+    width: 100vw;
+    background-image: url(/photo/wp6350571.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// @media only screen and (max-width: 990px){
+//     .main{
+//         overflow: hidden;
+//         .home{
+//             height: 60vh;
+            
+//         }
+//     }
+
+// }
+// @media only screen and (max-width: 600px){
+//     .main{
+//         .home{
+//             height: 50vh;
+            
+//         }
+//     }
+
+// }

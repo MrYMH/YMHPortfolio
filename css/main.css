@@ -1,0 +1,224 @@
+body {
+  background-color: #ebf2ff;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.mypage {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "gap header header header header header header header side side" "gap main main main main main main main side side" "gap main main main main main main main side side" "gap main main main main main main main side side" "gap main main main main main main main side side" "gap main main main main main main main side side" "gap main main main main main main main side side" "gap main main main main main main main side side" "gap main main main main main main main side side" "gap main main main main main main main side side";
+}
+
+.main {
+  grid-area: main;
+}
+
+.sidebar {
+  grid-area: side;
+}
+
+@media only screen and (max-width: 480px) {
+  .mypage {
+    display: block;
+  }
+}
+.red {
+  color: #f76262;
+}
+
+.blue {
+  color: #0075ff;
+}
+
+.green {
+  color: #12d226;
+}
+
+.mybtn {
+  color: #12d226;
+  border: 1px solid #12d226;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.mybtn:hover {
+  color: #eee;
+  border: 1px solid transparent;
+  background-color: #12d226;
+}
+
+.navbar {
+  width: 75%;
+  background-color: transparent !important;
+}
+.navbar .navmob {
+  display: none;
+}
+.navbar .navbar-brand img {
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.home {
+  width: 100%;
+  height: 90vh;
+}
+
+.main {
+  overflow: hidden;
+  width: 100vw;
+  background-image: url(/photo/wp6350571.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about {
+  width: 100vw;
+  height: 100vh;
+}
+.about .meImg img {
+  width: 7rem;
+  border-radius: 50%;
+}
+.about .social .icon {
+  background-color: #aaa;
+  width: 1.7rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .social .icon:hover {
+  background-color: #ff7a00;
+}
+.about .aboutbtn {
+  color: #12d226;
+  border: 1px solid #12d226;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.about .aboutbtn:hover {
+  color: #eee;
+  border: 1px solid transparent;
+  background-color: #12d226;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .about {
+    width: 100vw;
+    height: 135vh;
+    margin-top: 9rem;
+  }
+  .about .container {
+    position: relative;
+    top: -2.5rem;
+  }
+  .about .abh2 {
+    padding-top: 0px !important;
+  }
+  .about .aboutinfo {
+    width: 90% !important;
+  }
+  .about .social {
+    width: 40%;
+    padding: 0.2rem !important;
+  }
+  .about .abbtn {
+    position: relative;
+    top: -2rem;
+    right: -4.5rem;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .about {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 9rem;
+  }
+  .about .abh2 {
+    padding-top: 0px !important;
+  }
+  .about .aboutinfo {
+    width: 90%;
+  }
+  .about .social {
+    width: 40% !important;
+    padding: 0.2rem !important;
+  }
+  .about .abbtn {
+    position: relative;
+    top: -1rem;
+  }
+}
+.skills {
+  width: 100vw;
+  height: 60vh;
+  background-color: #666666 !important;
+}
+.skills .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skills .container .box .skill {
+  font-size: 3rem;
+}
+.skills .container .box .skill:hover .skicon {
+  color: #ff7a00 !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .skills .container h2 {
+    position: relative;
+    bottom: -3rem;
+  }
+}
+.projects {
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.contact {
+  width: 100vw;
+  height: 90vh;
+  background-color: #666666;
+}
+.contact .conlink {
+  color: #eee !important;
+}
+.contact .conlink:hover {
+  color: #ff7a00 !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .contact {
+    width: 100vw;
+    height: 130vh;
+    background-color: #666666;
+    font-size: 1rem !important;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  footer {
+    font-size: 0.8rem !important;
+  }
+}/*# sourceMappingURL=main.css.map */

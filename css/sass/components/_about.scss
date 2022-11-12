@@ -1,0 +1,103 @@
+@use '../color' as *;
+@use '../mixins' as *;
+.about{
+    
+    width: 100vw;
+    height: 100vh;
+    .meImg{
+        img{
+            width: 7rem;
+            border-radius: 50%;
+        }
+    }
+    .social{
+        .icon{
+            background-color: #aaa;
+            width: 1.7rem;
+            border-radius: 50%;
+            @include center;
+            
+        }
+        .icon:hover{
+            background-color: $orange;
+        }
+        
+    }
+    .aboutbtn{
+        color: $green;
+        border: 1px solid $green;
+        width: fit-content;
+        height: fit-content;
+        &:hover{
+            color: #eee;
+            border: 1px solid transparent;
+            background-color: $green;
+        }
+    }
+    
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .about{
+        .container{
+            position: relative;
+            top: -2.5rem;
+        }
+        .abh2{
+            padding-top: 0px !important;
+            
+        }
+        width: 100vw;
+        height: 135vh;
+        margin-top: 9rem;
+        .aboutinfo{
+            width: 90% !important;
+        }
+        .social{
+            width: 40%;
+            padding: 0.2rem !important;
+            
+            
+            
+        }
+        .abbtn{
+            position: relative;
+            top: -2rem;
+            right: -4.5rem;
+        }
+        
+        
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .about{
+        .abh2{
+            padding-top: 0px !important;
+        }
+        width: 100vw;
+        height: 100vh;
+        margin-top: 9rem;
+        .aboutinfo{
+            width: 90%;
+        }
+        .social{
+            width: 40% !important;
+            padding: 0.2rem !important;
+            
+            
+            
+        }
+        .abbtn{
+            position: relative;
+            top: -1rem;
+        }
+        
+        
+    }
+}
+
+
+
